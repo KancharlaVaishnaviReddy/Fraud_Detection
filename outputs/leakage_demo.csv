@@ -1,0 +1,3 @@
+protocol,valid_for_reporting,seed,train_rows,train_fraud_prevalence,test_rows,test_fraud_count,test_fraud_prevalence,auprc,roc_auc,f1_at_0.5,note,auprc_gap_invalid_minus_correct,f1_at_0.5_gap_invalid_minus_correct
+correct_train_only_smote,True,42,454902,0.5,56962,98,0.0017204452090867595,0.724469435669471,0.9708434302252134,0.10876132930513595,Valid comparison arm: scaler and SMOTE fit on training rows only; test is untouched.,0.0,0.0
+invalid_global_smote_contamination,False,42,454902,0.5,56962,98,0.0017204452090867595,0.7160229820236759,0.9802038411734981,0.11097410604192355,Invalid comparison arm: global SMOTE used held-out rows to create training synthetics; original test is unchanged.,-0.008446453645795104,0.0022127767367876028
